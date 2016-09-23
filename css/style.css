@@ -1,0 +1,277 @@
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Lora', serif; son las fuentes utilizadas par el sitio*/ 
+#contenidos{
+	width: 981px;
+	height: auto;
+	margin: auto;
+	position: relative;
+	/*background: gray;*/
+}
+
+/*configuracion de etiquetas*/
+
+body{
+background-image: url(../img/fondo2.png);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+h1{
+font-family: 'Montserrat', sans-serif;
+margin-left: 10px;
+font-size: 40px;
+text-align: center;
+}
+
+h2{
+font-family: 'Lora', serif;
+margin-left: 10px;
+font-size: 20px;
+text-align: center;
+color: white;
+}
+
+h3{
+font-family: 'Lora', serif;
+color: black;
+margin-left: 10px;
+font-size: 20px;
+text-align: left;
+}
+
+h4{
+font-family: 'Lora', serif;
+color: black;
+margin-left: 10px;
+font-size: 15px;
+text-align: center;
+}
+
+header{
+width: 981px;
+height:137px;
+background-image: url(../img/banner.png);
+/*background: rgba(255, 255, 255, 0.5);
+background: white;*/
+}
+
+nav{
+width: 981px;
+height: 50px;
+background: #E26C0E;
+border-radius: 10px;
+}
+
+ul{
+margin: auto;
+padding-top: 4px
+}
+
+li{
+float: left;
+list-style-type: none;
+padding: 10px;
+background: gray;
+margin: 5px;
+border-radius: 10px;/*se aplica el borde al boton*/
+box-shadow: 0 0 4px white inset;/*funciona como sobreado*/
+}
+
+section{
+	width: 700px;
+	background: #294F87;
+	height: 600px;
+	float: left;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+aside{
+	width: 200px;
+	background:orange;/* sirve para escoger el color a escoger*/
+	height: 640px;
+	float: left;
+	margin-left:20px;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+/*esta etiuqeta determina el pie de pagina */
+footer{
+	width: 1000px;
+	height: 60px;
+	background: #E26C0E;
+	float: left;
+	margin-top: 20px;
+	border-radius: 10px; 
+	margin-bottom: 20px;
+}
+p{
+	font-size: 12px;
+	font-weight: bolder;
+	line-height: 20px; /*etiqueta que sirve para el espacio entre textos*/
+	padding: 1px;
+	text-align: justify;/*etiqueta que sirve en la aliniacion del texto*/
+}
+
+
+ul.navegacion{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+/*este codigo sirve para organizar las columnas deacuerdo al tamaño de la pagina*/
+@media	screen and (max-width: 900){
+	.contenedor{
+		flex-direction: column;
+	}
+}
+
+/*configuracion de las clases*/
+.ancho_menu_home{width: 900px;}
+.ancho_menu_paginas{width: 970px;}
+/*clase que funciona para establecer los bloque de mejor forma*/
+.contenedor{
+	background: #6699FF;
+	width: 960px;
+	height: 400px;
+	margin:0 auto;
+	padding: 10px;
+	display: flex;
+	margin-top: 20px;
+
+}
+div{
+	/*background: rgb(189, 189, 189);*/
+	background: #6699FF;
+	padding: 5px;
+	margin: 5px;
+	border-radius: 10px;
+	flex: 1;
+}
+.columna1{
+	flex: 1;/*esta etiqueta determina el tamaño de la columna*/
+}
+.columna2{
+	align-self: stretch;
+}
+.info{
+	background: #6699FF;
+	width: 740px;
+	/*height: 620px;*/
+	margin:0 auto;
+	padding: 10px;
+	display: flex;
+	margin-top: 20px;
+}
+div{
+	/*background: rgb(189, 189, 189);*/
+	background: #294F87;
+	padding: 10px;
+	margin: 2px;
+	border-radius: 1px;
+	flex: 1;
+}
+.text1{
+	flex: 3;/*esta etiqueta determina el tamaño de la columna*/
+ }
+.caja-redes {
+    margin: 0 auto;
+    padding: 15px;
+    position: relative;
+    width: 400px;
+}
+.caja-redes a {
+    text-align: center;
+    font-size: 20px;
+}
+.icon-button {
+    background-color: white;
+    border-radius: 3em;
+    cursor: pointer;
+    display: inline-block;
+    height: 3em;
+    line-height: 3em;
+    margin: 0 8px;
+    position: relative;
+    width: 3em;
+}
+.icon-button span {
+    border-radius: 0;
+    display: block;
+    height: 0;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 0;
+}
+.icon-button:hover span {
+    width: 3em;
+    height: 3em;
+    border-radius: 3em;
+    margin: -1.5em;
+}
+.linkedin span {
+    background-color: #4393BB;
+}
+.pinterest span {
+    background-color: #C92228;
+}
+.twitter span {
+    background-color: #4099ff;
+}
+.facebook span {
+    background-color: #3B5998;
+}
+.google-plus span {
+    background-color: #db5a3c;
+}
+.icon-button i {
+    background: none;
+    color: white;
+    left: 0;
+    line-height: 3em;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 3em;
+    z-index: 2;
+}
+.icon-button .icon-linkedin {
+    color: #4393BB;
+}
+.icon-button .icon-pinterest {
+    color: #C92228;
+}
+.icon-button .icon-twitter {
+    color: #4099ff;
+}
+.icon-button .icon-facebook {
+    color: #3B5998;
+}
+.icon-button .icon-google-plus {
+    color: #db5a3c;
+}
+.icon-button:hover .icon-linkedin, .icon-button:hover .icon-pinterest, .icon-button:hover .icon-twitter, .icon-button:hover .icon-facebook, .icon-button:hover .icon-google-plus {
+    color: white;
+}
+/*sub clase con estas etiquetas le aplica el estilo a los botones*/
+.menu:link{color: white; text-decoration: none;}
+.menu:visited{color: white; text-decoration: none;}
+.menu:hover{color: white; text-decoration: none; text-shadow: 0 0 2px;}
+.menu:active{color: white; text-decoration: none;}
+
+
+
+
+
+
+
+
